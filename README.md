@@ -16,3 +16,15 @@ int main() {
         {'U', "..-"}, {'V', "...-"}, {'W', ".--"}, {'X', "-..-"}, {'Y', "-.--"},
         {'Z', "--.."}
     };
+ string message;
+    cout << "Enter a message in English (A-Z characters only): ";
+    getline(cin, message);
+
+    string fullMorse = "";
+
+    cout << endl;
+    for (char c : message) {
+        if (c == ' ') {
+            fullMorse += " "; // 3 spaces between words
+            continue;
+        }
