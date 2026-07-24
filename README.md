@@ -36,3 +36,8 @@ int main() {
             fullMorse += code + " "; // 3 spaces between letters
         }
     }
+cout << "\nFull Morse Code Message: " << fullMorse << endl;
+    cout << "\n(program exited with code: 0)" << endl;
+    cout << "Press any key to continue...";
+
+    return 0;
