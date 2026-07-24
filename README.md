@@ -28,3 +28,11 @@ int main() {
             fullMorse += " "; // 3 spaces between words
             continue;
         }
+    char upperC = toupper(c);
+        // Only process A-Z, ignore numbers and symbols
+        if (isalpha(upperC) && morse.find(upperC)!= morse.end()) {
+            string code = morse[upperC];
+            cout << upperC << ": " << code << endl;
+            fullMorse += code + " "; // 3 spaces between letters
+        }
+    }
